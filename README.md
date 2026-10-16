@@ -4,7 +4,7 @@ Puts your [WebChatAgent](https://webchatagent.com) chatbot on a TYPO3 website. T
 
 Works with TYPO3 10.4, 11.5, 12.4, 13.4 and 14 (PHP 7.2 to 8.5) from a single release.
 
-[Website](https://webchatagent.com/typo3-extension) · [Setup guide](https://docs.webchatagent.com/integrations/typo3) · [TYPO3 Extension Repository](https://extensions.typo3.org/extension/webchatagent) · [Pricing](https://webchatagent.com/pricing) (free plan available)
+[Website](https://webchatagent.com/typo3-extension) · [Setup guide](https://docs.webchatagent.com/integrations/typo3) · [TYPO3 Extension Repository](https://extensions.typo3.org/extension/webchatagent) · [Pricing](https://webchatagent.com/pricing)
 
 ## What it does
 
@@ -19,13 +19,7 @@ Settings like colours, texts, position and the bot's knowledge live in the WebCh
 
 ## Privacy and GDPR
 
-- Platform hosted in Germany (Frankfurt)
-- Data processing agreement under Art. 28 GDPR, concluded at sign-up
-- EU-based AI model for chats by default
-- Your content is not used to train AI models through WebChatAgent
-- Chats are deleted automatically after a retention period you set
-
-What this covers and what you still check yourself: [AI chatbot and GDPR](https://webchatagent.com/ai-chatbot-gdpr).
+How WebChatAgent handles data and what you still check yourself: [AI chatbot and GDPR](https://webchatagent.com/ai-chatbot-gdpr) and the [privacy policy](https://webchatagent.com/privacy-policy).
 
 ## Installation
 

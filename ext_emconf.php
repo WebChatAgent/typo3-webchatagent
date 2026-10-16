@@ -2,12 +2,12 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'WebChatAgent – AI Chatbot & Live Chat',
-    'description' => 'AI chatbot and live chat for TYPO3 10.4 to 14. The bot answers visitors from your own website content, collects contact requests and hands tricky chats to your team. One chatbot ID per site, no TypoScript. GDPR: hosted in Germany, data processing agreement under Art. 28 included, EU-based AI model by default. Free plan available at https://webchatagent.com/typo3-extension',
+    'description' => 'AI chatbot and live chat for TYPO3 10.4 to 14. The bot answers visitors from your own website content, collects contact requests and hands tricky chats to your team. One chatbot ID per site, no TypoScript. More: https://webchatagent.com/typo3-extension',
     'category' => 'fe',
     'author' => 'WebChatAgent',
     'author_company' => 'WebChatAgent',
     'state' => 'stable',
-    'version' => '1.0.3',
+    'version' => '1.0.4',
     'constraints' => [
         'depends' => [
             'typo3' => '10.4.0-14.4.99',
