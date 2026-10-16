@@ -19,7 +19,15 @@ Settings like colours, texts, position and the bot's knowledge live in the WebCh
 
 ## Privacy and GDPR
 
-How WebChatAgent handles data and what you still check yourself: [AI chatbot and GDPR](https://webchatagent.com/ai-chatbot-gdpr) and the [privacy policy](https://webchatagent.com/privacy-policy).
+From the [privacy policy](https://webchatagent.com/privacy-policy):
+
+- Servers and databases in data centers in Germany
+- Data processing agreement under Art. 28 GDPR, accepted at sign-up
+- New chatbots use an AI model hosted in the EU by default
+- AI providers are used via paid business APIs; under their terms, data is not used to train models
+- Conversations are deleted automatically after a retention period you can adjust
+
+The privacy policy lists every service provider involved, including those outside the EU. What you still check yourself: [AI chatbot and GDPR](https://webchatagent.com/ai-chatbot-gdpr).
 
 ## Installation
 

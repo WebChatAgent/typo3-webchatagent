@@ -1,7 +1,7 @@
 {
     "name": "webchatagent/typo3-webchatagent",
     "type": "typo3-cms-extension",
-    "description": "AI chatbot and live chat for TYPO3: answers visitors from your website content, collects contact requests and hands chats to your team. One chatbot ID per site, inline chat content element.",
+    "description": "AI chatbot and live chat for TYPO3: answers visitors from your website content, collects contact requests and hands chats to your team. Servers in Germany, data processing agreement under Art. 28 GDPR.",
     "keywords": [
         "TYPO3",
         "extension",
@@ -37,7 +37,7 @@
     "extra": {
         "typo3/cms": {
             "extension-key": "webchatagent",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "skip-ter-packagist-import": true,
             "Package": {
                 "providesPackages": {}
