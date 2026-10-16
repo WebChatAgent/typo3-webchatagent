@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="nl" datatype="plaintext" original="EXT:webchatagent/Resources/Private/Language/locallang_db.xlf" product-name="webchatagent">
+		<header/>
+		<body>
+			<trans-unit id="info.title" approved="yes">
+				<source>Chatbot by WebChatAgent</source>
+				<target>Chatbot van WebChatAgent</target>
+			</trans-unit>
+			<trans-unit id="info.notConnected" approved="yes">
+				<source>Create your chatbot for free at webchatagent.com, let it learn your website and copy its ID into the field below. Free plan available, higher limits and more features with a paid plan.</source>
+				<target>Maak je chatbot gratis aan op webchatagent.com, laat hem je website leren en kopieer zijn ID in het veld hieronder. Gratis abonnement beschikbaar, hogere limieten en meer functies met een betaald abonnement.</target>
+			</trans-unit>
+			<trans-unit id="info.connected" approved="yes">
+				<source>Design, texts and knowledge of your chatbot are managed in the WebChatAgent dashboard. Changes show up on the website right away.</source>
+				<target>Uiterlijk, teksten en kennis van je chatbot beheer je in het WebChatAgent-dashboard. Wijzigingen staan meteen op de website.</target>
+			</trans-unit>
+			<trans-unit id="info.register" approved="yes">
+				<source>Create free account</source>
+				<target>Gratis account aanmaken</target>
+			</trans-unit>
+			<trans-unit id="info.openDashboard" approved="yes">
+				<source>Open chatbot in dashboard</source>
+				<target>Chatbot openen in het dashboard</target>
+			</trans-unit>
+			<trans-unit id="info.guide" approved="yes">
+				<source>Setup guide</source>
+				<target>Installatiehandleiding</target>
+			</trans-unit>
+			<trans-unit id="tab.chat" approved="yes">
+				<source>Chat</source>
+				<target>Chat</target>
+			</trans-unit>
+			<trans-unit id="tab.general" approved="yes">
+				<source>General</source>
+				<target>Algemeen</target>
+			</trans-unit>
+			<trans-unit id="tab.language" approved="yes">
+				<source>Language</source>
+				<target>Taal</target>
+			</trans-unit>
+			<trans-unit id="tab.access" approved="yes">
+				<source>Access</source>
+				<target>Toegang</target>
+			</trans-unit>
+			<trans-unit id="site.chatbotId" approved="yes">
+				<source>Chatbot ID</source>
+				<target>Chatbot-ID</target>
+			</trans-unit>
+			<trans-unit id="site.chatbotId.description" approved="yes">
+				<source>The chat then appears on every page of this site. Find the ID in the chatbot dashboard: open the chatbot, choose "Chatbot actions", then "Copy chatbot ID". Example: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c. Leave empty to switch the chat off.</source>
+				<target>De chat verschijnt dan op alle pagina's van deze site. De ID vind je in het chatbotdashboard: open de chatbot, kies "Chatbotacties" en daarna "Chatbot-ID kopiëren". Voorbeeld: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c. Leeg laten schakelt de chat uit.</target>
+			</trans-unit>
+			<trans-unit id="site.frontendUser" approved="yes">
+				<source>Pass logged-in website users to the chat</source>
+				<target>Ingelogde websitegebruikers aan de chat doorgeven</target>
+			</trans-unit>
+			<trans-unit id="site.frontendUser.description" approved="yes">
+				<source>If a visitor is logged in to this website, the chat receives their name, email address and username. It can greet them by name and does not ask for contact details again. Mention this in your privacy policy.</source>
+				<target>Is een bezoeker op deze website ingelogd, dan krijgt de chat naam, e-mailadres en gebruikersnaam. Zo kan de chat de bezoeker bij naam begroeten en vraagt hij niet opnieuw om contactgegevens. Vermeld dit in je privacyverklaring.</target>
+			</trans-unit>
+			<trans-unit id="site.baseUrl" approved="yes">
+				<source>Server address</source>
+				<target>Serveradres</target>
+			</trans-unit>
+			<trans-unit id="site.baseUrl.description" approved="yes">
+				<source>Usually leave empty. Only fill in if your chatbot provider gives you its own address, for example https://chat.example-agency.com</source>
+				<target>Meestal leeg laten. Alleen invullen als je chatbotaanbieder een eigen adres noemt, bijvoorbeeld https://chat.voorbeeld-bureau.nl</target>
+			</trans-unit>
+			<trans-unit id="page.hide" approved="yes">
+				<source>Hide the chat button on this page and all subpages</source>
+				<target>Chatknop op deze pagina en alle subpagina's verbergen</target>
+			</trans-unit>
+			<trans-unit id="page.hide.description" approved="yes">
+				<source>Inline chats placed as content elements stay visible. Set it on the root page to hide the chat button on the whole site.</source>
+				<target>Inline-chats als contentelement blijven zichtbaar. Ingesteld op de startpagina verdwijnt de chatknop op de hele site.</target>
+			</trans-unit>
+			<trans-unit id="inline.title" approved="yes">
+				<source>Inline chat</source>
+				<target>Inline-chat</target>
+			</trans-unit>
+			<trans-unit id="inline.description" approved="yes">
+				<source>Shows the chat inside the page content, for example on a contact or help page.</source>
+				<target>Toont de chat direct in de pagina-inhoud, bijvoorbeeld op een contact- of helppagina.</target>
+			</trans-unit>
+			<trans-unit id="inline.header" approved="yes">
+				<source>Internal name (not shown on the website)</source>
+				<target>Interne naam (niet zichtbaar op de website)</target>
+			</trans-unit>
+			<trans-unit id="inline.chatbotId" approved="yes">
+				<source>Chatbot ID</source>
+				<target>Chatbot-ID</target>
+			</trans-unit>
+			<trans-unit id="inline.chatbotId.description" approved="yes">
+				<source>Leave empty to use the chatbot ID of this site (Sites module, tab "Chat"). Example: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c</source>
+				<target>Leeg laten om de chatbot-ID van deze site te gebruiken (module Sites, tabblad "Chat"). Voorbeeld: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c</target>
+			</trans-unit>
+			<trans-unit id="inline.height" approved="yes">
+				<source>Height</source>
+				<target>Hoogte</target>
+			</trans-unit>
+			<trans-unit id="inline.height.description" approved="yes">
+				<source>Optional, for example 600px or 80vh. Leave empty and the chat grows with its content.</source>
+				<target>Optioneel, bijvoorbeeld 600px of 80vh. Leeg gelaten groeit de chat mee met de inhoud.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

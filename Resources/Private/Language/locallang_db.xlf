@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:webchatagent/Resources/Private/Language/locallang_db.xlf" product-name="webchatagent">
+		<header/>
+		<body>
+			<trans-unit id="info.title">
+				<source>Chatbot by WebChatAgent</source>
+			</trans-unit>
+			<trans-unit id="info.notConnected">
+				<source>Create your chatbot for free at webchatagent.com, let it learn your website and copy its ID into the field below. Free plan available, higher limits and more features with a paid plan.</source>
+			</trans-unit>
+			<trans-unit id="info.connected">
+				<source>Design, texts and knowledge of your chatbot are managed in the WebChatAgent dashboard. Changes show up on the website right away.</source>
+			</trans-unit>
+			<trans-unit id="info.register">
+				<source>Create free account</source>
+			</trans-unit>
+			<trans-unit id="info.openDashboard">
+				<source>Open chatbot in dashboard</source>
+			</trans-unit>
+			<trans-unit id="info.guide">
+				<source>Setup guide</source>
+			</trans-unit>
+			<trans-unit id="tab.chat">
+				<source>Chat</source>
+			</trans-unit>
+			<trans-unit id="tab.general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tab.language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="tab.access">
+				<source>Access</source>
+			</trans-unit>
+			<trans-unit id="site.chatbotId">
+				<source>Chatbot ID</source>
+			</trans-unit>
+			<trans-unit id="site.chatbotId.description">
+				<source>The chat then appears on every page of this site. Find the ID in the chatbot dashboard: open the chatbot, choose "Chatbot actions", then "Copy chatbot ID". Example: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c. Leave empty to switch the chat off.</source>
+			</trans-unit>
+			<trans-unit id="site.frontendUser">
+				<source>Pass logged-in website users to the chat</source>
+			</trans-unit>
+			<trans-unit id="site.frontendUser.description">
+				<source>If a visitor is logged in to this website, the chat receives their name, email address and username. It can greet them by name and does not ask for contact details again. Mention this in your privacy policy.</source>
+			</trans-unit>
+			<trans-unit id="site.baseUrl">
+				<source>Server address</source>
+			</trans-unit>
+			<trans-unit id="site.baseUrl.description">
+				<source>Usually leave empty. Only fill in if your chatbot provider gives you its own address, for example https://chat.example-agency.com</source>
+			</trans-unit>
+			<trans-unit id="page.hide">
+				<source>Hide the chat button on this page and all subpages</source>
+			</trans-unit>
+			<trans-unit id="page.hide.description">
+				<source>Inline chats placed as content elements stay visible. Set it on the root page to hide the chat button on the whole site.</source>
+			</trans-unit>
+			<trans-unit id="inline.title">
+				<source>Inline chat</source>
+			</trans-unit>
+			<trans-unit id="inline.description">
+				<source>Shows the chat inside the page content, for example on a contact or help page.</source>
+			</trans-unit>
+			<trans-unit id="inline.header">
+				<source>Internal name (not shown on the website)</source>
+			</trans-unit>
+			<trans-unit id="inline.chatbotId">
+				<source>Chatbot ID</source>
+			</trans-unit>
+			<trans-unit id="inline.chatbotId.description">
+				<source>Leave empty to use the chatbot ID of this site (Sites module, tab "Chat"). Example: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c</source>
+			</trans-unit>
+			<trans-unit id="inline.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="inline.height.description">
+				<source>Optional, for example 600px or 80vh. Leave empty and the chat grows with its content.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

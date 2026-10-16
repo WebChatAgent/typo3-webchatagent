@@ -1,0 +1,46 @@
+{
+    "name": "webchatagent/typo3-webchatagent",
+    "type": "typo3-cms-extension",
+    "description": "AI chatbot and live chat for TYPO3: answers visitors from your website content, captures leads and hands chats to your team. Floating chat button, inline chat content element, per-site configuration.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "chatbot",
+        "AI chatbot",
+        "live chat",
+        "customer support"
+    ],
+    "homepage": "https://webchatagent.com/typo3-extension",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "WebChatAgent",
+            "homepage": "https://webchatagent.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "docs": "https://docs.webchatagent.com/integrations/typo3",
+        "source": "https://github.com/webchatagent/typo3-webchatagent",
+        "issues": "https://github.com/webchatagent/typo3-webchatagent/issues"
+    },
+    "require": {
+        "php": ">=7.2",
+        "typo3/cms-core": "^10.4 || ^11.5 || ^12.4 || ^13.4 || ^14.0",
+        "typo3/cms-frontend": "^10.4 || ^11.5 || ^12.4 || ^13.4 || ^14.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebChatAgent\\WebChatAgent\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "webchatagent",
+            "version": "1.0.0",
+            "Package": {
+                "providesPackages": {}
+            }
+        }
+    }
+}

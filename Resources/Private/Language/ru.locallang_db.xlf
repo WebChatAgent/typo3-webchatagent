@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="EXT:webchatagent/Resources/Private/Language/locallang_db.xlf" product-name="webchatagent">
+		<header/>
+		<body>
+			<trans-unit id="info.title" approved="yes">
+				<source>Chatbot by WebChatAgent</source>
+				<target>Чат-бот от WebChatAgent</target>
+			</trans-unit>
+			<trans-unit id="info.notConnected" approved="yes">
+				<source>Create your chatbot for free at webchatagent.com, let it learn your website and copy its ID into the field below. Free plan available, higher limits and more features with a paid plan.</source>
+				<target>Создайте чат-бота бесплатно на webchatagent.com, обучите его на материалах вашего сайта и скопируйте его ID в поле ниже. Есть бесплатный тариф; более высокие лимиты и дополнительные функции доступны на платном тарифе.</target>
+			</trans-unit>
+			<trans-unit id="info.connected" approved="yes">
+				<source>Design, texts and knowledge of your chatbot are managed in the WebChatAgent dashboard. Changes show up on the website right away.</source>
+				<target>Внешний вид, тексты и знания чат-бота настраиваются в панели WebChatAgent. Изменения сразу появляются на сайте.</target>
+			</trans-unit>
+			<trans-unit id="info.register" approved="yes">
+				<source>Create free account</source>
+				<target>Создать бесплатный аккаунт</target>
+			</trans-unit>
+			<trans-unit id="info.openDashboard" approved="yes">
+				<source>Open chatbot in dashboard</source>
+				<target>Открыть чат-бота в панели</target>
+			</trans-unit>
+			<trans-unit id="info.guide" approved="yes">
+				<source>Setup guide</source>
+				<target>Инструкция по настройке</target>
+			</trans-unit>
+			<trans-unit id="tab.chat" approved="yes">
+				<source>Chat</source>
+				<target>Чат</target>
+			</trans-unit>
+			<trans-unit id="tab.general" approved="yes">
+				<source>General</source>
+				<target>Общее</target>
+			</trans-unit>
+			<trans-unit id="tab.language" approved="yes">
+				<source>Language</source>
+				<target>Язык</target>
+			</trans-unit>
+			<trans-unit id="tab.access" approved="yes">
+				<source>Access</source>
+				<target>Доступ</target>
+			</trans-unit>
+			<trans-unit id="site.chatbotId" approved="yes">
+				<source>Chatbot ID</source>
+				<target>ID чат-бота</target>
+			</trans-unit>
+			<trans-unit id="site.chatbotId.description" approved="yes">
+				<source>The chat then appears on every page of this site. Find the ID in the chatbot dashboard: open the chatbot, choose "Chatbot actions", then "Copy chatbot ID". Example: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c. Leave empty to switch the chat off.</source>
+				<target>Чат появится на всех страницах этого сайта. ID есть в панели чат-бота: откройте чат-бот, выберите «Действия с чат-ботом», затем «Копировать ID чат-бота». Пример: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c. Оставьте поле пустым, чтобы отключить чат.</target>
+			</trans-unit>
+			<trans-unit id="site.frontendUser" approved="yes">
+				<source>Pass logged-in website users to the chat</source>
+				<target>Передавать в чат вошедших пользователей сайта</target>
+			</trans-unit>
+			<trans-unit id="site.frontendUser.description" approved="yes">
+				<source>If a visitor is logged in to this website, the chat receives their name, email address and username. It can greet them by name and does not ask for contact details again. Mention this in your privacy policy.</source>
+				<target>Если посетитель вошёл на этот сайт, чат получает его имя, адрес электронной почты и имя пользователя. Чат обращается к нему по имени и не спрашивает контакты повторно. Укажите это в политике конфиденциальности.</target>
+			</trans-unit>
+			<trans-unit id="site.baseUrl" approved="yes">
+				<source>Server address</source>
+				<target>Адрес сервера</target>
+			</trans-unit>
+			<trans-unit id="site.baseUrl.description" approved="yes">
+				<source>Usually leave empty. Only fill in if your chatbot provider gives you its own address, for example https://chat.example-agency.com</source>
+				<target>Обычно оставьте пустым. Заполняйте, только если поставщик чат-бота дал вам собственный адрес, например https://chat.primer-agentstvo.ru</target>
+			</trans-unit>
+			<trans-unit id="page.hide" approved="yes">
+				<source>Hide the chat button on this page and all subpages</source>
+				<target>Скрыть кнопку чата на этой странице и всех подстраницах</target>
+			</trans-unit>
+			<trans-unit id="page.hide.description" approved="yes">
+				<source>Inline chats placed as content elements stay visible. Set it on the root page to hide the chat button on the whole site.</source>
+				<target>Встроенные чаты в виде элемента содержимого остаются видимыми. Если включить на главной странице, кнопка чата исчезнет со всего сайта.</target>
+			</trans-unit>
+			<trans-unit id="inline.title" approved="yes">
+				<source>Inline chat</source>
+				<target>Встроенный чат</target>
+			</trans-unit>
+			<trans-unit id="inline.description" approved="yes">
+				<source>Shows the chat inside the page content, for example on a contact or help page.</source>
+				<target>Показывает чат прямо в содержимом страницы, например на странице контактов или помощи.</target>
+			</trans-unit>
+			<trans-unit id="inline.header" approved="yes">
+				<source>Internal name (not shown on the website)</source>
+				<target>Внутреннее название (не отображается на сайте)</target>
+			</trans-unit>
+			<trans-unit id="inline.chatbotId" approved="yes">
+				<source>Chatbot ID</source>
+				<target>ID чат-бота</target>
+			</trans-unit>
+			<trans-unit id="inline.chatbotId.description" approved="yes">
+				<source>Leave empty to use the chatbot ID of this site (Sites module, tab "Chat"). Example: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c</source>
+				<target>Оставьте пустым, чтобы использовать ID чат-бота этого сайта (модуль Sites, вкладка «Чат»). Пример: 3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c</target>
+			</trans-unit>
+			<trans-unit id="inline.height" approved="yes">
+				<source>Height</source>
+				<target>Высота</target>
+			</trans-unit>
+			<trans-unit id="inline.height.description" approved="yes">
+				<source>Optional, for example 600px or 80vh. Leave empty and the chat grows with its content.</source>
+				<target>Необязательно, например 600px или 80vh. Если оставить пустым, чат растёт вместе с содержимым.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

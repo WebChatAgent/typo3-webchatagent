@@ -1,0 +1,20 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  WebChatAgent\WebChatAgent\:
+    resource: '../Classes/*'
+    # FormEngine nodes get constructor arguments from the node factory in TYPO3 10/11
+    exclude: '../Classes/{WidgetSettings.php,Event,Form}'
+
+  WebChatAgent\WebChatAgent\Middleware\WidgetInjector:
+    public: true
+
+  # The event exists from TYPO3 12 on; older versions never dispatch it.
+  WebChatAgent\WebChatAgent\EventListener\ContentSecurityPolicyListener:
+    tags:
+      - name: event.listener
+        identifier: 'webchatagent/content-security-policy'
+        event: TYPO3\CMS\Core\Security\ContentSecurityPolicy\Event\PolicyMutatedEvent
