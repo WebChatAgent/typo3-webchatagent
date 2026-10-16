@@ -37,7 +37,8 @@
     "extra": {
         "typo3/cms": {
             "extension-key": "webchatagent",
-            "version": "1.0.1",
+            "version": "1.0.2",
+            "skip-ter-packagist-import": true,
             "Package": {
                 "providesPackages": {}
             }
