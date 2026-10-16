@@ -17,6 +17,8 @@ function check(bool $condition, string $message): void
 }
 
 $id = '3f2b9c1e-8a7d-4e5f-9b0c-1d2e3f4a5b6c';
+$otherId = '9a8b7c6d-5e4f-4a3b-8c2d-1e0f9a8b7c6d';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['encryptionKey'] = 'selfcheck-key';
 $noContext = function (): string {
     return '';
 };
@@ -36,7 +38,7 @@ check($settings->injectInto($page, false, $noContext) === $page, 'hidden page st
 check(WidgetSettings::fromSiteConfiguration([])->injectInto($page, true, $noContext) === $page, 'site without chatbot ID stays untouched');
 check(substr_count($settings->injectInto($html, true, $noContext), '<chat-widget ') === 1, 'widget is never added twice');
 
-$inlinePage = '<html><body>' . WidgetSettings::inlineElement($id, '80vh') . '</body></html>';
+$inlinePage = '<html><body>' . $settings->inlineElement($id, '80vh') . '</body></html>';
 $html = WidgetSettings::fromSiteConfiguration([])->injectInto($inlinePage, true, $noContext);
 check(strpos($html, 'chat-widget-inline.js') !== false && strpos($html, '<chat-widget ') === false, 'inline chat gets its script without a site chatbot ID');
 check(strpos($html, 'container-height="80vh"') !== false, 'inline height is rendered');
@@ -48,6 +50,28 @@ $html = $settings->injectInto($inlinePage, true, function () use ($context): str
 $attribute = 'context-data="' . htmlspecialchars($context, ENT_QUOTES | ENT_HTML5, 'UTF-8') . '"';
 check(substr_count($html, $attribute) === 2, 'context data reaches floating and inline element, escaped');
 check(strpos($html, '<x>') === false, 'context data cannot break out of the attribute');
+
+$hasContext = function (string $body) use ($settings): bool {
+    $html = $settings->injectInto('<html><body>' . $body . '</body></html>', false, function (): string {
+        return '{"Email":"a@example.com"}';
+    });
+    return strpos($html, 'context-data=') !== false;
+};
+check($hasContext('<web-chat-agent CHATBOT-ID=\'' . strtoupper($id) . '\'></web-chat-agent>'), 'pasted snippet of the site chatbot gets context data');
+check($hasContext('<chat-agent-inline title="a>b" chatbot-id="' . $id . '"></chat-agent-inline>'), '">" in a quoted value does not end the tag');
+check($hasContext($settings->inlineElement($otherId, '')), 'signed inline element of another chatbot gets context data');
+check(!$hasContext('<chat-widget chatbot-id="' . $otherId . '"></chat-widget>'), 'pasted snippet of another chatbot gets no context data');
+$forged = str_replace('data-webchatagent-signature="', 'data-webchatagent-signature="0', $settings->inlineElement($otherId, ''));
+check(!$hasContext($forged), 'forged signature gets no context data');
+check(!$hasContext('<chat-widget data-x=" chatbot-id=' . $id . '" chatbot-id="' . $otherId . '"></chat-widget>'), 'chatbot-id inside another value is ignored');
+check(!$hasContext('<chat-widget "chatbot-id=' . $id . '" chatbot-id="' . $otherId . '"></chat-widget>'), 'malformed tag gets no context data');
+check(!$hasContext('<chat-widget chatbot-id="' . $otherId . '" chatbot-id="' . $id . '"></chat-widget>'), 'first chatbot-id wins like in the browser');
+$hugeTag = '<p>Text</p><chat-widget chatbot-id="' . $id . '" data-x=' . str_repeat('a', 100000) . '></chat-widget>';
+check(strpos($settings->injectInto('<html><body>' . $hugeTag . '</body></html>', false, function (): string {
+    return '{"Email":"a@example.com"}';
+}), '<p>Text</p>') !== false, 'a huge chat tag never blanks the page');
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['encryptionKey'] = '';
+check(strpos(WidgetSettings::fromSiteConfiguration([])->inlineElement($otherId, ''), 'signature') === false, 'no encryption key, no signature');
 
 $called = false;
 WidgetSettings::fromSiteConfiguration([])->injectInto($page, true, function () use (&$called): string {

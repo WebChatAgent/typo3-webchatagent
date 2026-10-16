@@ -73,6 +73,8 @@ final class AddCustomerNumber
 
 Values must be strings, numbers or booleans. The chat keeps up to 20 keys and 500 characters per value. Context data is shown to the bot, it is not a login. Don't pass anything you wouldn't show the visitor.
 
+Context data only goes to your own chats: elements with the site's chatbot ID and **Inline chat** content elements (signed with the TYPO3 encryption key). A chat snippet of another chatbot pasted into a page gets none.
+
 ## Good to know
 
 - **Server address**: leave it empty. Only fill it in if your chatbot provider gives you its own address (white-label), e.g. `https://chat.example-agency.com`.

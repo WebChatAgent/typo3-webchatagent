@@ -34,11 +34,11 @@ final class InlineChatRenderer
         $site = $request instanceof ServerRequestInterface ? $request->getAttribute('site') : null;
         $siteConfiguration = $site instanceof Site ? $site->getConfiguration() : [];
 
-        $chatbotId = WidgetSettings::chatbotId($record['tx_webchatagent_chatbot_id'] ?? '')
-            ?: WidgetSettings::fromSiteConfiguration($siteConfiguration)->chatbotId;
+        $settings = WidgetSettings::fromSiteConfiguration($siteConfiguration);
+        $chatbotId = WidgetSettings::chatbotId($record['tx_webchatagent_chatbot_id'] ?? '') ?: $settings->chatbotId;
         if ($chatbotId === '') {
             return '';
         }
-        return WidgetSettings::inlineElement($chatbotId, WidgetSettings::height($record['tx_webchatagent_height'] ?? ''));
+        return $settings->inlineElement($chatbotId, WidgetSettings::height($record['tx_webchatagent_height'] ?? ''));
     }
 }
